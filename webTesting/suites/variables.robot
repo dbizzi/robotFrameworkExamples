@@ -10,3 +10,4 @@ ${headerComputadoresEInformatica}   //h1[contains(text(),'Computadores e Inform√
 ${searchBox}    //div[contains(@class,'search')]//input[contains(@id,'twotabsearchtextbox')]
 ${searchButton}    //div[contains(@class,'search')]//input[contains(@id,'nav-search-submit-button')]
 ${produtoPesquisado}    //span[contains(@data-component-type,'s-search-results')]//span[contains(text(),'Xbox Series S')]
+${BROWSER}      chrome

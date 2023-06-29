@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.7.5 on linux)" generated="20230629 14:58:31.138" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Amazon Testes" source="/opt/robotframework/tests/amazon_testes.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletronicos&quot;" line="10">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.649" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.651" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.652" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.639" endtime="20230629 14:58:31.655"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.655" endtime="20230629 14:58:31.656"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.637" endtime="20230629 14:58:31.656"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.659" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.658" endtime="20230629 14:58:31.659"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.660" endtime="20230629 14:58:31.660"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.657" endtime="20230629 14:58:31.660"/>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da amazon.com.br e verifica a categoria Computadores e Informática</doc>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230629 14:58:31.633" endtime="20230629 14:58:31.661">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="20">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.675" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.676" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.676" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.673" endtime="20230629 14:58:31.677"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.677" endtime="20230629 14:58:31.677"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.671" endtime="20230629 14:58:31.677"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.679" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.679" endtime="20230629 14:58:31.680"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.680" endtime="20230629 14:58:31.680"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.678" endtime="20230629 14:58:31.680"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<status status="FAIL" starttime="20230629 14:58:31.666" endtime="20230629 14:58:31.681">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="28">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.693" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.695" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.696" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.691" endtime="20230629 14:58:31.696"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.697" endtime="20230629 14:58:31.697"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.689" endtime="20230629 14:58:31.698"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.700" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.700" endtime="20230629 14:58:31.700"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.701" endtime="20230629 14:58:31.702"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.699" endtime="20230629 14:58:31.703"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20230629 14:58:31.683" endtime="20230629 14:58:31.705">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="38">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.717" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.717" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.718" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.715" endtime="20230629 14:58:31.719"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.720" endtime="20230629 14:58:31.721"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.713" endtime="20230629 14:58:31.721"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.725" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.725" endtime="20230629 14:58:31.726"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.727" endtime="20230629 14:58:31.727"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.723" endtime="20230629 14:58:31.728"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20230629 14:58:31.709" endtime="20230629 14:58:31.728">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<doc>Essa suite testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230629 14:58:31.189" endtime="20230629 14:58:31.730"/>
+</suite>
+<suite id="s1-s2" name="Amazon Testes Gherkin Bdd" source="/opt/robotframework/tests/amazon_testes_gherkin_bdd.robot">
+<test id="s1-s2-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletronicos&quot;" line="10">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.799" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.800" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.800" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.797" endtime="20230629 14:58:31.801"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.802" endtime="20230629 14:58:31.807"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.795" endtime="20230629 14:58:31.807"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.809" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.809" endtime="20230629 14:58:31.809"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.809" endtime="20230629 14:58:31.810"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.808" endtime="20230629 14:58:31.810"/>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da amazon.com.br e verifica a categoria Computadores e Informática</doc>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230629 14:58:31.793" endtime="20230629 14:58:31.810">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="19">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.817" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.818" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.818" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.816" endtime="20230629 14:58:31.820"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.821" endtime="20230629 14:58:31.822"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.814" endtime="20230629 14:58:31.823"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.826" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.825" endtime="20230629 14:58:31.826"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.826" endtime="20230629 14:58:31.827"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.824" endtime="20230629 14:58:31.827"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<status status="FAIL" starttime="20230629 14:58:31.811" endtime="20230629 14:58:31.827">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="27">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.835" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.837" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.837" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.832" endtime="20230629 14:58:31.838"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.839" endtime="20230629 14:58:31.839"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.831" endtime="20230629 14:58:31.840"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.842" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.842" endtime="20230629 14:58:31.842"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.843" endtime="20230629 14:58:31.843"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.841" endtime="20230629 14:58:31.843"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20230629 14:58:31.828" endtime="20230629 14:58:31.843">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="34">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=firefox</arg>
+<arg>remote_url=http://localhost:4444/wd/hub</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 14:58:31.853" level="INFO">Opening browser 'firefox' to base url 'None' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20230629 14:58:31.855" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 14:58:31.856" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 14:58:31.850" endtime="20230629 14:58:31.858"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 14:58:31.858" endtime="20230629 14:58:31.859"/>
+</kw>
+<status status="FAIL" starttime="20230629 14:58:31.848" endtime="20230629 14:58:31.859"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 14:58:31.887" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 14:58:31.861" endtime="20230629 14:58:31.888"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 14:58:31.891" endtime="20230629 14:58:31.892"/>
+</kw>
+<status status="PASS" starttime="20230629 14:58:31.860" endtime="20230629 14:58:31.892"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20230629 14:58:31.845" endtime="20230629 14:58:31.892">Setup failed:
+TypeError: __init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<doc>Essa suite testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230629 14:58:31.734" endtime="20230629 14:58:31.895"/>
+</suite>
+<status status="FAIL" starttime="20230629 14:58:31.144" endtime="20230629 14:58:31.901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="2" skip="0">busca_produtos</stat>
+<stat pass="0" fail="2" skip="0">menus</stat>
+<stat pass="0" fail="2" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="Amazon Testes">Tests.Amazon Testes</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s2" name="Amazon Testes Gherkin Bdd">Tests.Amazon Testes Gherkin Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

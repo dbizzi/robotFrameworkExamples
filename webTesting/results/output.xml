@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.3 on linux)" generated="20230629 18:27:32.873" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Amazon Testes" source="/opt/robotframework/tests/amazon_testes.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletronicos&quot;" line="10">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.618" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.618" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.619" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.614" endtime="20230629 18:27:33.630"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.630" endtime="20230629 18:27:33.631"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.612" endtime="20230629 18:27:33.631"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.633" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.632" endtime="20230629 18:27:33.633"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.633" endtime="20230629 18:27:33.633"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.631" endtime="20230629 18:27:33.633"/>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da amazon.com.br e verifica a categoria Computadores e Informática</doc>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230629 18:27:33.608" endtime="20230629 18:27:33.633">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="20">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.648" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.648" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.649" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.644" endtime="20230629 18:27:33.650"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.651" endtime="20230629 18:27:33.651"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.639" endtime="20230629 18:27:33.652"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.655" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.655" endtime="20230629 18:27:33.656"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.658" endtime="20230629 18:27:33.659"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.653" endtime="20230629 18:27:33.659"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<status status="FAIL" starttime="20230629 18:27:33.636" endtime="20230629 18:27:33.659">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="28">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.668" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.669" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.670" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.664" endtime="20230629 18:27:33.672"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.673" endtime="20230629 18:27:33.674"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.663" endtime="20230629 18:27:33.675"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.678" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.678" endtime="20230629 18:27:33.678"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.678" endtime="20230629 18:27:33.679"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.676" endtime="20230629 18:27:33.679"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20230629 18:27:33.660" endtime="20230629 18:27:33.679">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="38">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.687" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.687" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.688" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.684" endtime="20230629 18:27:33.690"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.690" endtime="20230629 18:27:33.690"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.682" endtime="20230629 18:27:33.691"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.695" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.693" endtime="20230629 18:27:33.695"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.695" endtime="20230629 18:27:33.696"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.692" endtime="20230629 18:27:33.696"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20230629 18:27:33.680" endtime="20230629 18:27:33.696">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<doc>Essa suite testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230629 18:27:32.952" endtime="20230629 18:27:33.700"/>
+</suite>
+<suite id="s1-s2" name="Amazon Testes Gherkin Bdd" source="/opt/robotframework/tests/amazon_testes_gherkin_bdd.robot">
+<test id="s1-s2-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletronicos&quot;" line="10">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.778" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.778" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.779" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.773" endtime="20230629 18:27:33.781"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.782" endtime="20230629 18:27:33.783"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.771" endtime="20230629 18:27:33.783"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.785" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.785" endtime="20230629 18:27:33.785"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.786" endtime="20230629 18:27:33.786"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.784" endtime="20230629 18:27:33.786"/>
+</kw>
+<doc>Esse teste verifica o menu eletronicos do site da amazon.com.br e verifica a categoria Computadores e Informática</doc>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230629 18:27:33.768" endtime="20230629 18:27:33.787">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="19">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.795" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.796" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.796" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.792" endtime="20230629 18:27:33.798"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.799" endtime="20230629 18:27:33.799"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.790" endtime="20230629 18:27:33.799"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.807" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.806" endtime="20230629 18:27:33.807"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.808" endtime="20230629 18:27:33.808"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.800" endtime="20230629 18:27:33.809"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<status status="FAIL" starttime="20230629 18:27:33.788" endtime="20230629 18:27:33.809">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="27">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.816" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.817" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.817" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.814" endtime="20230629 18:27:33.822"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.825" endtime="20230629 18:27:33.826"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.812" endtime="20230629 18:27:33.826"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.829" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.828" endtime="20230629 18:27:33.830"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.830" endtime="20230629 18:27:33.830"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.827" endtime="20230629 18:27:33.831"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20230629 18:27:33.810" endtime="20230629 18:27:33.831">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<test id="s1-s2-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="34">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>remote_url=http://localhost:4444</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230629 18:27:33.847" level="INFO">Opening browser 'chrome' to base url 'about:blank' through remote server at 'http://localhost:4444'.</msg>
+<msg timestamp="20230629 18:27:33.848" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230629 18:27:33.848" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</msg>
+<status status="FAIL" starttime="20230629 18:27:33.842" endtime="20230629 18:27:33.851"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230629 18:27:33.852" endtime="20230629 18:27:33.852"/>
+</kw>
+<status status="FAIL" starttime="20230629 18:27:33.837" endtime="20230629 18:27:33.853"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230629 18:27:33.859" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230629 18:27:33.859" endtime="20230629 18:27:33.860"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230629 18:27:33.860" endtime="20230629 18:27:33.861"/>
+</kw>
+<status status="PASS" starttime="20230629 18:27:33.857" endtime="20230629 18:27:33.861"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20230629 18:27:33.832" endtime="20230629 18:27:33.861">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'browser_profile'</status>
+</test>
+<doc>Essa suite testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230629 18:27:33.705" endtime="20230629 18:27:33.863"/>
+</suite>
+<status status="FAIL" starttime="20230629 18:27:32.882" endtime="20230629 18:27:33.867"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="2" skip="0">busca_produtos</stat>
+<stat pass="0" fail="2" skip="0">menus</stat>
+<stat pass="0" fail="2" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="Amazon Testes">Tests.Amazon Testes</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s2" name="Amazon Testes Gherkin Bdd">Tests.Amazon Testes Gherkin Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

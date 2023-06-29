@@ -4,7 +4,7 @@ Resource    variables.robot
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=chrome
+    Open Browser    about:blank    ${BROWSER}    remote_url=http://localhost:4444
     Maximize Browser Window
 
 
