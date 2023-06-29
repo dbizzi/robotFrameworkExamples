@@ -22,10 +22,12 @@ RUN dnf upgrade -y && dnf install -y python3.10
 # Obs.: As barras são para indicar quebra de linha, mas o comando é um só,
 # é como se eu tivesso rodando tudo numa linha só.
 RUN curl https://bootstrap.pypa.io/get-pip.py | sudo python3
-RUN pip3 install robotframework
+RUN pip3 install robotframework==6.0.2
+RUN pip3 install robotframework-pythonlibcore==4.1.2
 RUN pip3 install robotframework-faker
 RUN pip3 install robotframework-requests
-RUN pip3 install robotframework-seleniumlibrary
+RUN pip3 install robotframework-seleniumlibrary==6.1.0
 RUN pip3 install robotframework-databaselibrary
 RUN pip3 install robotframework-browser
+RUN pip3 install selenium==4.9.0
 
