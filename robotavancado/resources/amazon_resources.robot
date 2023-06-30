@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    variables.robot
+Resource   C:\udemy\robotFramework\robotavancado\suites\variables.robot
 
 *** Keywords ***
 Abrir o navegador

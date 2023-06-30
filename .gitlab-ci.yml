@@ -4,7 +4,7 @@ stages:
 # Job Linux Fedora - execução dos testes sem docker
 WEB Testing in Chrome:
     stage: Acceptance Tests
-    image: fedora:31
+    image: fedora:37
     tags:
         - docker
     artifacts:
@@ -15,7 +15,7 @@ WEB Testing in Chrome:
     before_script:
         - cat /etc/*-release
         - dnf upgrade -y >/dev/null && echo OK
-        - dnf install -y python37 >/dev/null && echo OK
+        - dnf install -y python3.10 >/dev/null && echo OK
         - dnf install -y chromedriver-stable >/dev/null && echo OK
         - dnf install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm >/dev/null && echo OK
         - chown root /usr/bin/chromedriver >/dev/null && echo OK
@@ -23,9 +23,16 @@ WEB Testing in Chrome:
         - chmod 755 /usr/bin/chromedriver >/dev/null && echo OK
         - chromedriver --version
         - python --version
-        - pip3 install robotframework robotframework-seleniumlibrary | grep "Successfully installed"
+        - pip3 install robotframework==6.0.2
+        - pip3 install robotframework-pythonlibcore==4.1.2
+        - pip3 install robotframework-faker
+        - pip3 install robotframework-requests
+        - pip3 install robotframework-seleniumlibrary==6.1.0
+        - pip3 install robotframework-databaselibrary
+        - pip3 install robotframework-browser
+        - pip3 install selenium==4.9.0 | grep "Successfully installed"
     script:
-        - robot -d ./results -v BROWSER:headlesschrome TestSitePractice.robot
+        - robot -d ./results -v BROWSER:headlesschrome .robotavancado/suites/amazon_testes.robot
 
 # Job Docker - execução dos testes em container Docker
 WEB Testing in Chrome and Docker:

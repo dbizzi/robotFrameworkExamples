@@ -4,7 +4,7 @@ Resource    variables.robot
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    about:blank    ${BROWSER}    remote_url=http://192.168.5.10:4444/wd/hub
+    Open Browser    about:blank    ${BROWSER}    remote_url=http://localhost:4444/wd/hub
     Maximize Browser Window
 
 
