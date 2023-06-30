@@ -32,7 +32,7 @@ WEB Testing in Chrome:
         - pip3 install robotframework-browser
         - pip3 install selenium==4.9.0 | grep "Successfully installed"
     script:
-        - robot -d ./results -v BROWSER:headlesschrome .robotavancado/suites/amazon_testes.robot
+        - robot -d ./results -v BROWSER:headlesschrome ./robotavancado/suites/amazon_testes.robot
 
 # Job Docker - execução dos testes em container Docker
 WEB Testing in Chrome and Docker:
@@ -46,4 +46,4 @@ WEB Testing in Chrome and Docker:
             - ./results
         expire_in: 1 week
     script:
-        - robot -d ./results -v BROWSER:headlesschrome TestSitePractice.robot
+        - robot -d ./results -v BROWSER:headlesschrome ./robotavancado/suites/amazon_testes.robot

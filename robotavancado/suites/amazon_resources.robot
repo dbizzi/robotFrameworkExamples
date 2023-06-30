@@ -2,9 +2,14 @@
 Library    SeleniumLibrary
 Resource    variables.robot
 
+*** Variables ***
+${BROWSER}      chrome
+### Opções necessárias para rodar headless no Linux do CI (runner)
+${OPTIONS}      add_argument("--disable-dev-shm-usage"); add_argument("--headless"); add_argument("--no-sandbox")
+
 *** Keywords ***
 Abrir o navegador
-    Open Browser    about:blank    ${BROWSER}    remote_url=http://localhost:4444/wd/hub
+    Open Browser    about:blank    ${BROWSER}    options=${OPTIONS}
     Maximize Browser Window
 
 
